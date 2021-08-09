@@ -1,0 +1,135 @@
+#hero {
+
+    .slide-wrapper {
+        position: relative;
+    }
+
+    .slide {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 3s ease-in-out;
+
+
+        .slide-inner {
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.2);
+                z-index: -1;
+            }
+        }
+
+    }
+
+    .slide.active {
+        opacity: 1;
+        z-index: 5 !important;
+
+    }
+
+    .slide-content {
+        position: relative;
+        flex: 0 0 50%;
+        max-width: 50%;
+
+        h1 {
+            color: #fff;
+            font-weight: 300;
+            text-transform: uppercase;
+            font-size: rem(55);
+
+            span {
+                font-weight: 400;
+            }
+        }
+
+        p {
+            color: #fff;
+            margin-bottom: rem(30);
+        }
+
+        a {
+            color: #fff;
+            padding: rem(11) rem(30);
+            border-radius: 0;
+            border: rem(2) solid $primary;
+            background: $primary;
+            font-weight: 500;
+            transition: .25s;
+            text-transform: uppercase;
+            font-size: rem(14);
+
+            &:nth-child(1) {
+                margin-right: rem(10);
+            }
+
+            &:nth-child(2) {
+                background: transparent;
+                color: $primary;
+
+                &:hover {
+                    background: $primary;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+
+    #slide-0 {
+        background: url(https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&h=3000&w=2000);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 3;
+    
+    }
+
+    #slide-1 {
+        background: url(https://images.pexels.com/photos/7019028/pexels-photo-7019028.jpeg?auto=compress&cs=tinysrgb&h=2396&w=2904);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 2;
+    }
+    
+    #slide-2 {
+        background: url(https://images.pexels.com/photos/2373201/pexels-photo-2373201.jpeg?auto=compress&cs=tinysrgb&h=5527&w=3948);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+
+    .dots {
+        position: absolute;
+        bottom: rem(80);
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 99;
+
+
+        .dot {
+            display: inline-block;
+            width: rem(15);
+            height: rem(15);
+            border-radius: 50%;
+            border: rem(1) solid #ccc;
+            background: #ccc;
+            margin: rem(2);
+            cursor: pointer;
+        }
+
+        .dot.active {
+            background: $primary;
+        }
+    }
+}

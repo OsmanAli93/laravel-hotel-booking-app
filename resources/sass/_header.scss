@@ -1,0 +1,37 @@
+#main-header {
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    background: transparent;
+    border-bottom: rem(1) solid #ccc;
+
+    .nav-link,
+    .navbar-brand {
+        color: #fff;
+        transition: .25s ease-in-out;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+    }
+}
+
+#second-header {
+    .nav-link,
+    .navbar-brand {
+        color: #000;
+        transition: .25s ease-in-out;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+    }
+}

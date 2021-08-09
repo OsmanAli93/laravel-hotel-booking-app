@@ -1,0 +1,116 @@
+#booking {
+
+    .room-desc {
+
+        h4.room-name {
+            font-size: rem(18);
+            font-weight: 500;
+        }
+
+        p.room-text {
+            font-size: rem(13);
+        }
+
+        ul {
+            li {
+                font-size: rem(13);
+            }
+        }
+
+        .room-price {
+
+            h3 {
+                font-size: rem(20);
+                font-weight: 400;
+                letter-spacing: rem(-1);
+                color: #f06060;
+
+                span {
+                    color: #5c4b51;
+                }
+            }
+
+            button.btn {
+                font-size: rem(13);
+                text-transform: uppercase;
+            }
+        }
+
+        .form-group {
+            
+            .room-count-btn {
+                position: relative;
+            }
+
+            .room-btn-vertical {
+               position: absolute;
+               top: 1px;
+               right: 0;
+
+                button {
+                    position: relative;
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                    padding: rem(8) rem(10);
+                    border: rem(1) solid #ccc; 
+                    
+                    i {
+                        position: absolute;
+                        top: 0;
+                        left: rem(5);
+                    }
+                    
+                }
+            }
+
+           
+        }
+    }
+
+    .room-summary {
+        border: rem(1) solid #ccc;
+
+        h3 {
+            font-size: rem(18);
+            text-transform: uppercase;
+            background: #1f1311;
+            padding: rem(10) rem(25);
+            color: #fff;
+            font-weight: 400;
+        }
+
+        .detail {
+            display: flex;
+            font-size: rem(15);
+            span {
+                flex: 1;
+            }
+        }
+
+        h4 {
+            font-size: rem(15);
+            font-weight: 400;
+            margin: rem(15) 0;
+        }
+
+        .table tr th, .table tbody tr td {
+            padding: rem(5);
+            font-size: rem(14);
+            vertical-align: middle;
+            font-weight: 400;
+        }
+
+        .btn-next {
+            padding: rem(10) rem(16);
+            font-size: rem(18);
+            font-weight: 300;
+            text-transform: uppercase;
+            background: #6da92f;
+            border-color: #609529;
+            letter-spacing: rem(-1);
+            color: #fff;
+        }
+    }
+
+}

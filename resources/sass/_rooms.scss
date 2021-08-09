@@ -1,0 +1,34 @@
+#rooms {
+    background: #f9f9f9;
+
+    .room {
+        background: #fff;
+        height: 100%;
+        box-shadow: 0 0 rem(15) rgb(0 0 0 / 10%);
+        transition: .25s ease-in-out;
+
+        &:hover {
+            box-shadow: none;
+        }
+
+        .room-details {
+            padding: rem(20);
+    
+            h5 {
+                font-size: rem(18);
+                font-weight: 400;
+            }
+    
+            span.price {
+                font-size: rem(18);
+                font-weight: 400;
+            }
+
+            p.room-text {
+                line-height: rem(30);
+            }
+        }
+    }
+
+    
+}

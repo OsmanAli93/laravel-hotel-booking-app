@@ -1,0 +1,30 @@
+#facilites {
+
+    .icon {
+        text-align: center;
+
+        i {
+            width: rem(55);
+            height: rem(55);
+            font-size: rem(24);
+            line-height: rem(55);
+            background: #fff;
+            display: inline-block;
+            color: $primary;
+            box-shadow: 0 0 rem(10) rgb(0 0 0 / 8%);
+        }
+
+    }
+
+    .desc {
+
+        h3 {
+            font-size: rem(16);
+        }
+
+        p {
+            line-height: rem(30);
+            font-size: rem(15);
+        }
+    }
+}
